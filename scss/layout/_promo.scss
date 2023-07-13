@@ -1,0 +1,10 @@
+.promo{
+    background-color: color(warningSuccess);
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include responsive-custom(mobile){
+        min-height: 10vh;       
+    }
+}

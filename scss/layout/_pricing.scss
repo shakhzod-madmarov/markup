@@ -1,0 +1,26 @@
+.pricing{
+    min-height: 90vh;
+}
+.pricing-list{
+    @extend %flexLayout;
+    justify-content: space-evenly;
+    list-style: none;
+    @include responsive-custom(mobile){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;  
+    }
+}
+.pricing-item{
+    border: color(primary) solid 2px; 
+    width: 15%;
+    height: auto;  
+    @include responsive-custom(mobile){
+        width: 75%;   
+        margin: 0 0 40px 30px;
+    }
+}
+.pricing-features-list{
+    width: 100%;
+    height: auto;
+}

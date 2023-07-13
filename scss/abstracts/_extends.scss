@@ -1,0 +1,31 @@
+%flexLayout{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+%icons{
+    font-size: 30px;
+    padding: 20px;
+    @include responsive-custom(mobile){
+        font-size: 20px;   
+         padding: 10px;    
+    }
+}
+
+%search{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    @include responsive-custom(mobile){
+        display: none;
+    }
+    .search-input{
+        width: 50%;
+        height: 20px;
+        margin: 15px 10px 0 100px;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+}

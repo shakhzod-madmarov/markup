@@ -1,0 +1,28 @@
+.footer{
+    @extend %flexLayout;
+    background-color: color(primary);
+    justify-content: space-around;
+    min-height: 10vh;
+    position: sticky;
+    bottom: 0;
+}
+.footer-socials{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    padding-right: 190px;
+    @include responsive-custom(mobile){
+        width: 30%;
+        padding: 0;    
+    }
+}
+.footer-socials-item{
+    color: color(primary);
+    font-size: 40px;
+    a{
+        color: #fff;
+    }
+    @include responsive-custom(mobile){
+        font-size: 30px;       
+    }
+}

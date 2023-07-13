@@ -1,0 +1,47 @@
+.registration{
+    @extend %flexLayout;
+    min-height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.registration-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.registration-form-group{
+    margin-bottom: 15px;
+}
+.registration-form-input{
+    display: block;
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid color(secondary);
+    background-color: #ececec;
+    color: color(primary);
+    border-radius: 10px;      
+    &:focus{
+        outline: none;
+        border: 2px solid color(greenDisclaimer);
+    }
+    &::placeholder{
+        color: #ccc;
+    }
+    @include responsive-custom(mobile){
+        font-size: 15px;      
+        padding: 5px; 
+    }
+}
+.registration-label{
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}   

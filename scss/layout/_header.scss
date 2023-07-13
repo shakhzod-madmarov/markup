@@ -1,0 +1,33 @@
+.header{
+    min-height: 10vh;
+    box-sizing: border-box;
+    max-width: 100%;
+    @include responsive-custom(mobile){
+        min-height: 8vh;
+    }
+}
+.header-nav{
+    @extend %flexLayout;
+    background-color: color(darkBlack);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 150px
+}
+.header-nav-list{
+    @extend %flexLayout;
+    padding: 20px 50px; 
+    cursor: pointer;
+    .nav-item{
+        display: flex;  
+        padding-left: 100px;
+        padding-right: 20px;
+        font-size: 25px;
+        a{
+            color: #fff;
+        }
+    }
+    @include responsive-custom(mobile){
+        display: none;
+    }
+}    
